@@ -1,0 +1,37 @@
+:root {
+  --orange: #e29578;
+  --dark-green: #006d77;
+  --light-green: #83c5be;
+  --light-blue: #edf6f9;
+  --pink: #ffddd2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  margin-top: 1em;
+}
+
+.navbar a {
+  color: var(--orange);
+}
+
+.logo {
+  padding-left: 2em;
+}
+
+.navMenu a {
+  padding-right: 1em;
+}
