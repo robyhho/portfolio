@@ -16,7 +16,11 @@ a {
   text-decoration: none;
 }
 
+/* Navbar styles */
+
 .navbar {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,13 +29,133 @@ a {
 }
 
 .navbar a {
-  color: var(--orange);
+  font-weight: 600;
+  font-size: 1.5em;
 }
 
 .logo {
-  padding-left: 2em;
+  padding-left: 3.3em;
+  color: var(--orange);
 }
 
 .navMenu a {
-  padding-right: 1em;
+  padding-right: 2em;
+  color: var(--dark-green);
+}
+
+/* Header styles */
+
+header {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--dark-green) 0%,
+    var(--dark-green) 65%,
+    var(--orange) 65%,
+    var(--orange) 100%
+  );
+  padding-bottom: 8em;
+}
+
+.title {
+  padding-top: 3em;
+  padding-left: 25%;
+  font-size: 2.5em;
+  color: var(--orange);
+}
+
+.subtitle {
+  padding-left: 25%;
+  padding-top: 0.5em;
+  color: white;
+  font-weight: 400;
+}
+
+.catImage {
+  width: 400px;
+  position: absolute;
+  left: 53%;
+  bottom: 0em;
+  transform: scaleX(-1);
+  z-index: 2;
+}
+
+.bgLines {
+  position: absolute;
+  left: 53%;
+  bottom: 0;
+  width: 45em;
+  height: 10em;
+  background: white;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 6px,
+    transparent 3px,
+    transparent 1px,
+    rgba(255, 255, 255, 0.4) 7px
+  );
+}
+
+.bgCircle {
+  position: absolute;
+  overflow: hidden;
+  height: 30em;
+  width: 30em;
+  border: 7px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  left: -15em;
+  bottom: -15em;
+}
+
+/* Universal section styles */
+.sectionTitle {
+  color: var(--orange);
+  padding-bottom: 0.5em;
+}
+
+.sectionText {
+  color: var(--dark-green);
+}
+
+/* About section styles */
+
+.about {
+  background-color: var(--light-blue);
+  height: fit-content;
+  padding: 5em;
+}
+
+/* Work section styles */
+
+.work {
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* work image styles */
+
+.imageContainer {
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  gap: 3em;
+  padding-top: 2em;
+}
+.placeholderImgSmall {
+  width: 460px;
+  height: 460px;
+  background-color: #aeaeae;
+  border-radius: 5px;
+}
+
+.placeholderImgBig {
+  background-color: #aeaeae;
+  width: 720px;
+  height: 460px;
+  border-radius: 5px;
 }
