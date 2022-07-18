@@ -16,12 +16,12 @@
 <body>
   <Header>
     <nav class="navbar">
-      <a href="" class="logo">Robbie Ho</a>
+      <a class="logo" id="logo">Robbie Ho</a>
       <div class="navMenu">
-        <a href="">About</a>
-        <a href="">My Work</a>
-        <a href="">My Toolkit</a>
-        <a href="">Contact</a>
+        <a id="navAbout">About</a>
+        <a id="navWork">My Work</a>
+        <a id="navToolkit">My Toolkit</a>
+        <a id="navContact">Contact</a>
       </div>
     </nav>
     <h1 class="title">Frontend Web <br>Developer</h1>
@@ -36,15 +36,15 @@
       <div class="bgCircle circ5"></div>
     </div>
   </Header>
-  <section class="about">
-    <h2 class="sectionTitle">Hi there, I'm Robbie!</h2>
+  <section class="about" id="about">
+    <h2 class="sectionTitle"> Hi there, I'm Robbie!</h2>
     <p class="sectionText">A web developer who loves building projects using code. <br>
       Transforming ideas and designs into a complete website, ensuring seamless user experience is
       my passion. I graduated from Open University’s BSc in Computing and IT. <br>
       Other than coding, I spend most of my free time with my dog Ahri going on hikes and exploring the outdoors.
     </p>
   </section>
-  <section class="work">
+  <section class="work" id="work">
     <h2 class="sectionTitle">My Work</h2>
     <p class="sectionText">Click on any project to learn more!</p>
     <div class="imageContainer">
@@ -93,27 +93,42 @@
       </div>
     </div>
   </section>
-  <section class="toolkit">
+  <section class="toolkit" id="toolkit">
     <div class="toolkitContainer">
       <h1 class="sectionTitle">My Toolkit</h1>
       <div class="toolkits">
         <div class="iconContainer" id="toolkit1">
           <img src="./images/toolkitIcons/html5.svg" class="icon" alt="HTML Logo">
+          <span>HTML5</span>
         </div>
         <div class="iconContainer" id="toolkit2">
           <img src="./images//toolkitIcons/css.svg" alt="CSS logo" class="icon">
+          <span>CSS</span>
         </div>
-        <div class="iconContainer">
+        <div class="iconContainer" id="toolkit3">
           <img src="./images/toolkitIcons/js.svg" alt="javascript logo" class="icon">
+          <span>Javascript</span>
         </div>
-        <div class="iconContainer">
+        <div class="iconContainer" id="toolkit4">
           <img src="./images/toolkitIcons/react.svg" alt="react logo" class="icon">
+          <span>React</span>
         </div>
-        <div class="iconContainer">
+        <div class="iconContainer" id="toolkit5">
           <img src="./images/toolkitIcons/swift.svg" alt="swift logo" class="icon">
+          <span>Swift</span>
         </div>
       </div>
     </div>
+  </section>
+  <section class="contact" id="contact">
+    <h1 class="sectionTitle">Let's chat!</h1>
+    <p class="sectionText">I'm ready and open for new challenges and opportunities. </br>
+      Send an email and we can chat.
+    </p>
+    <button class="btnEmail">Email me</button>
+    <button class="dot" id="dot">
+      <img src="./images/arrowup.svg" alt="arrow up button" class="arrowUp" id="arrowUp">
+    </button>
   </section>
   <script src="script.js"></script>
 </body>

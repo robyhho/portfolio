@@ -19,18 +19,21 @@ a {
 /* Navbar styles */
 
 .navbar {
-  position: absolute;
-  top: 0;
+  padding-top: 0;
+  margin-top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  margin-top: 1em;
 }
 
 .navbar a {
   font-weight: 600;
   font-size: 1.5em;
+}
+
+.navbar a:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -54,9 +57,9 @@ header {
     var(--orange) 65%,
     var(--orange) 100%
   );
-  padding-top: 5em;
+  padding-top: 1em;
   padding-bottom: 8em;
-  z-index: -1;
+  z-index: 100;
 }
 
 .title {
@@ -150,19 +153,22 @@ header {
   color: var(--dark-green);
 }
 
+section {
+  padding: 5em;
+}
+
 /* About section styles */
 
 .about {
   background-color: var(--light-blue);
   height: fit-content;
-  padding: 5em;
+
   z-index: 5;
 }
 
 /* Work section styles */
 
 .work {
-  padding: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,14 +179,13 @@ header {
 
 .imageContainer {
   position: relative;
-  align-self: center;
   display: flex;
   flex-wrap: wrap;
   gap: 4em;
-  padding-top: 2em;
-  padding: 2em;
   z-index: 5;
+  padding: 2em 5em;
 }
+
 .placeholderImgSmall {
   width: 500px;
   height: 460px;
@@ -261,10 +266,8 @@ header {
 }
 
 .toolkitContainer {
-  margin: 2em;
-  padding-top: 5em;
-  padding-bottom: 20em;
-  width: 60%;
+  padding: 7em;
+  width: 70%;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -273,9 +276,86 @@ header {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
+.toolkitContainer .sectionTitle {
+  padding-bottom: 2em;
+}
+
 .toolkits {
   display: grid;
+  gap: 4em;
+  grid-template-columns: repeat(5, 1fr);
 }
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer span {
+  color: var(--light-green);
+  font-size: 1.2em;
+}
+
 .icon {
   width: 5em;
+}
+
+#toolkit2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#toolkit3 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+#toolkit4 {
+  grid-column-start: 2;
+}
+
+#toolkit5 {
+  grid-column-start: 4;
+}
+
+/* Chat section styles */
+
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnEmail {
+  margin-top: 2em;
+  font-size: 1.2em;
+  padding: 0.5em 2em;
+  border: 1px solid var(--dark-green);
+  color: var(--dark-green);
+  border-radius: 5px;
+  background-color: white;
+  width: 10em;
+  align-self: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.btnEmail:hover {
+}
+
+.dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5000px;
+  background-color: var(--dark-green);
+  align-self: flex-end;
+}
+
+.arrowUp {
+  width: 50%;
 }
