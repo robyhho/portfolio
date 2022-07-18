@@ -28,7 +28,6 @@ dot.addEventListener("click", moveTo);
 function moveTo(event) {
   let target = event.target.id;
   target = target.replace("nav", "").toLowerCase();
-  console.log(target);
   const targetElem = document.getElementById(`${target}`);
   targetElem.scrollIntoView({ behavior: "smooth" });
 }
