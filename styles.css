@@ -238,6 +238,11 @@ section {
   color: var(--orange);
   align-items: center;
   justify-content: center;
+  height: 100%;
+}
+
+.hide {
+  display: none;
 }
 
 .cross {
