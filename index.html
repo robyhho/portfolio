@@ -5,17 +5,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;600;700&display=swap" rel="stylesheet">
+  <script? src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js">
+  </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;600;700&display=swap" rel="stylesheet">
 
-  <title>Robbie's portfolio website</title>
+    <title>Robbie's portfolio website</title>
 </head>
 <!-- TODO 
   Email Btn: Action + Animation?
   Add images to work portfolio section
   Check all text
+  Reponsive
 -->
 
 <body>
@@ -48,6 +51,9 @@
       my passion. I graduated from Open University’s BSc in Computing and IT. <br>
       Other than coding, I spend most of my free time with my dog Ahri going on hikes and exploring the outdoors.
     </p>
+    <div class="sectionAccents">
+
+    </div>
   </section>
   <section class="work" id="work">
     <h2 class="sectionTitle">My Work</h2>
@@ -219,7 +225,7 @@
     <p class="sectionText">I'm ready and open for new challenges and opportunities. </br>
       Send an email and we can chat.
     </p>
-    <button class="btnEmail">Email me</button>
+    <button class="btnEmail jello-horizontal">Email me</button>
     <button class="dot" id="dot">
       <img src="./images/arrowup.svg" alt="arrow up button" class="arrowUp" id="arrowUp">
     </button>
