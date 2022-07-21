@@ -364,7 +364,7 @@ section {
 }
 
 .toolkitContainer {
-  padding: 7em;
+  padding: 5em;
   width: 70%;
   background-color: white;
   align-items: center;
@@ -381,7 +381,7 @@ section {
 .toolkits {
   display: grid;
   gap: 4em;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .iconContainer {
@@ -400,7 +400,7 @@ section {
   width: 5em;
 }
 
-#toolkit2 {
+/* #toolkit2 {
   grid-column-start: 3;
   grid-column-end: 4;
 }
@@ -416,7 +416,7 @@ section {
 
 #toolkit5 {
   grid-column-start: 4;
-}
+} */
 
 /* Chat section styles */
 
@@ -452,8 +452,15 @@ section {
   border-radius: 5000px;
   background-color: var(--dark-green);
   align-self: flex-end;
+  border: none;
 }
 
 .arrowUp {
   width: 50%;
+  border: none;
+}
+
+.dot:hover {
+  transform: rotate(360deg);
+  transition: transform 0.3s ease-out;
 }
