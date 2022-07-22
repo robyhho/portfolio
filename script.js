@@ -1,6 +1,8 @@
 //SETTERS
 
 //SELECTORS
+const loader = document.getElementById("loaderContainer");
+
 const logo = document.getElementById("logo");
 const navAbout = document.getElementById("navAbout");
 const navWork = document.getElementById("navWork");
@@ -34,6 +36,13 @@ project3.addEventListener("click", showInfo);
 project4.addEventListener("click", showInfo);
 
 //FUNCTIONS
+
+/* Loader Removal function  */
+document.addEventListener("DOMContentLoaded", function (event) {
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 3000);
+});
 
 function moveTo(event) {
   let target = event.target.id;
