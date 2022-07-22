@@ -19,10 +19,11 @@
   Add images to work portfolio section
   Check all text
   Reponsive
+  Re-enable Loader 
 -->
 
 <body>
-  <div class="loaderContainer" id="loaderContainer">
+  <!-- <div class="loaderContainer" id="loaderContainer">
     <div class="feeder">
       <div></div>
       <div></div>
@@ -30,16 +31,17 @@
       <div></div>
       <div></div>
     </div>
-  </div>
+  </div> -->
   <Header>
     <nav class="navbar">
       <a class="logo" id="logo">Robbie Ho</a>
-      <div class="navMenu">
+      <div class="navMenu" id="navMenu">
         <a id="navAbout" class="underline">About</a>
         <a id="navWork" class="underline">My Work</a>
         <a id="navToolkit" class="underline">My Toolkit</a>
         <a id="navContact" class="underline">Contact</a>
       </div>
+      <img src="./images/bars.svg" alt="menu icon" class="menuIcon" id="menuIcon">
     </nav>
     <h1 class="title">Frontend Web <br>Developer</h1>
     <h2 class="subtitle">I enjoy building things for the web</h2>
@@ -60,8 +62,7 @@
       my passion. I graduated from Open University’s BSc in Computing and IT. <br>
       Other than coding, I spend most of my free time with my dog Ahri going on hikes and exploring the outdoors.
     </p>
-    <div class="sectionAccents">
-
+    <div class="aboutAccents">
     </div>
   </section>
   <section class="work" id="work">
@@ -101,7 +102,7 @@
             <span class="language">MongoDB</span>
             <span class="language">Express</span>
             <span class="language">React</span>
-            <span class="language">Node</span>
+            <span class="language" id="Node">Node</span>
           </div>
           <div class="projectBtnContainer">
             <button>View Live</button>
