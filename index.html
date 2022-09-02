@@ -15,10 +15,10 @@
     <title>Robbie's portfolio website</title>
 </head>
 <!-- TODO 
-  Email Btn: Action + Animation?
+  Email Btn: Action
   Add images to work portfolio section
   Check all text
-  Reponsive
+  Reponsive - (done - 475px)
   Re-enable Loader 
 -->
 
@@ -32,7 +32,7 @@
       <div></div>
     </div>
   </div> -->
-  <Header>
+  <Header id="header">
     <nav class="navbar">
       <a class="logo" id="logo">Robbie Ho</a>
       <div class="navMenu" id="navMenu">
@@ -41,7 +41,10 @@
         <a id="navToolkit" class="underline">My Toolkit</a>
         <a id="navContact" class="underline">Contact</a>
       </div>
-      <img src="./images/bars.svg" alt="menu icon" class="menuIcon" id="menuIcon">
+
+      <div class="menuBtn" id="menuBtn">
+        <div class="menuBurger"></div>
+      </div>
     </nav>
     <h1 class="title">Frontend Web <br>Developer</h1>
     <h2 class="subtitle">I enjoy building things for the web</h2>
@@ -83,7 +86,7 @@
           </div>
           <div class="projectBtnContainer">
             <button>View Live</button>
-            <button>Github</button>
+            <button id="github1">Github</button>
           </div>
         </div>
       </div>
@@ -95,7 +98,7 @@
             myself, with the design being adapted
             to the clients wishes. Built a backend api, to handle interactions with MongoDB, to store items such as
             products.</p>
-          <div class="langContainer">
+          <div class="langContainer" id="bbContainer">
             <span class="language">HTML</span>
             <span class="language">CSS</span>
             <span class="language">JS</span>
@@ -106,7 +109,7 @@
           </div>
           <div class="projectBtnContainer">
             <button>View Live</button>
-            <button>Github</button>
+            <button id="github2">Github</button>
           </div>
         </div>
       </div>
@@ -126,7 +129,7 @@
           </div>
           <div class="projectBtnContainer">
             <button>View Live</button>
-            <button>Github</button>
+            <button id="github3">Github</button>
           </div>
         </div>
       </div>
@@ -146,7 +149,7 @@
           </div>
           <div class="projectBtnContainer">
             <button>View Live</button>
-            <button>Github</button>
+            <button id="github4">Github</button>
           </div>
         </div>
       </div>
