@@ -30,6 +30,64 @@ a {
   z-index: 5000;
 }
 
+/* Header styles */
+
+header {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--dark-green) 0%,
+    var(--dark-green) 65%,
+    var(--orange) 65%,
+    var(--orange) 100%
+  );
+  padding-top: 2em;
+  z-index: 100;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.introTitle {
+  padding-top: 30vh;
+  padding-left: 25%;
+  color: white;
+  font-weight: 400;
+  padding-bottom: 0.1em;
+}
+
+.title {
+  padding-left: 25%;
+  font-size: 3em;
+  color: var(--orange);
+}
+
+.subtitle {
+  padding-left: 25%;
+  padding-top: 0.5em;
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.chevDown {
+  width: 20px;
+  height: 20px;
+  margin-top: 4em;
+  margin-left: 35%;
+}
+
+.catImage {
+  width: 500px;
+  position: absolute;
+  left: 53%;
+  bottom: 0;
+  transform: scaleX(-1);
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+}
+
 /* Navbar styles */
 
 .navbar {
@@ -66,10 +124,6 @@ a {
 
 .navMenu a {
   color: var(--dark-green);
-}
-
-.menuBtn {
-  position: absolute;
 }
 
 /* Menu Burger styles */
@@ -151,49 +205,6 @@ a {
   transform-origin: bottom left;
 }
 
-/* Header styles */
-
-header {
-  position: relative;
-  background: linear-gradient(
-    to right,
-    var(--dark-green) 0%,
-    var(--dark-green) 65%,
-    var(--orange) 65%,
-    var(--orange) 100%
-  );
-  padding-top: 2em;
-  padding-bottom: 8em;
-  z-index: 100;
-  width: 100%;
-  overflow: hidden;
-}
-
-.title {
-  padding-top: 3em;
-  padding-left: 25%;
-  font-size: 2.5em;
-  color: var(--orange);
-}
-
-.subtitle {
-  padding-left: 25%;
-  padding-top: 0.5em;
-  color: white;
-  font-weight: 400;
-}
-
-.catImage {
-  width: 400px;
-  position: absolute;
-  left: 53%;
-  bottom: 0;
-  transform: scaleX(-1);
-  z-index: 2;
-  padding: 0;
-  margin: 0;
-}
-
 /* Background header styles */
 
 .bgLines {
@@ -201,7 +212,7 @@ header {
   left: 53%;
   bottom: 0;
   width: 45em;
-  height: 10em;
+  height: 15em;
   background: white;
   background: repeating-linear-gradient(
     -45deg,
@@ -218,32 +229,32 @@ header {
   overflow: hidden;
   border-radius: 100%;
   left: -10%;
-  bottom: -50%;
+  bottom: -20%;
   z-index: 0;
 }
 
 .circ1 {
   border: 2px solid rgba(255, 255, 255, 0.1);
-  height: 30em;
-  width: 30em;
+  height: 40em;
+  width: 40em;
 }
 
 .circ2 {
   border: 4px solid rgba(255, 255, 255, 0.1);
-  height: 20em;
-  width: 20em;
+  height: 30em;
+  width: 30em;
 }
 
 .circ3 {
   border: 4px solid rgba(255, 255, 255, 0.2);
-  height: 24em;
-  width: 24em;
+  height: 34em;
+  width: 34em;
 }
 
 .circ4 {
   border: 6px solid rgba(255, 255, 255, 0.2);
-  height: 21em;
-  width: 21em;
+  height: 31em;
+  width: 31em;
 }
 
 .circ5 {

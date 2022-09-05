@@ -29,6 +29,8 @@ const github2 = document.getElementById("github2");
 const github3 = document.getElementById("github3");
 const github4 = document.getElementById("github4");
 
+const btnEmail = document.getElementById("btnEmail");
+
 //EVENT LISTENERS
 
 /* Navbar Events */
@@ -52,6 +54,9 @@ github1.addEventListener("click", goToUrl);
 github2.addEventListener("click", goToUrl);
 github3.addEventListener("click", goToUrl);
 github4.addEventListener("click", goToUrl);
+
+/* Email Button events */
+// btnEmail.addEventListener("click", goToEmail);
 
 //FUNCTIONS
 
@@ -177,3 +182,7 @@ function goToUrl(event) {
       break;
   }
 }
+
+// function goToEmail(event) {
+//   href = "mailto:someone@yoursite.com";
+//   }
