@@ -528,21 +528,78 @@ section {
 /* Contact Section styles */
 
 .contact {
-  position: relative;
-  width: 100%;
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logoContainer {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+}
+.contactIcon {
+  width: 3em;
+  height: 3em;
+}
+
+.contactIcon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contactForm {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  padding: 2em 4em;
+  background-color: rgba(131, 197, 190, .3);
+  border-radius: 5px;
+  
+}
+
+
+
+.contactForm input,
+.contactForm textarea {
+  border-radius: 5px;
+  width: 20rem;
+  border: 0.5px solid var(--dark-green);
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+
+
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border: none; !important
+  border-color: green;
+}
+
+.contactForm input {
+  height: 3em;
+}
+
+.contactForm textarea {
+  height: 10em;
 }
 
 .btnEmail {
-  margin-top: 2em;
-  font-size: 1.2em;
-  padding: 0.5em 2em;
-  border: 1px solid var(--dark-green);
+  font-size: 1em;
+  padding: 1em 2em;
+  border: .5px solid var(--dark-green);
   color: var(--dark-green);
   border-radius: 5px;
   background-color: white;
-  width: 10em;
+  width: 12em;
   align-self: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -1060,10 +1117,20 @@ section {
     width: 2.5em;
   }
   /* contact section */
+.contact {
+  flex-direction: column;
+}
+
+.contactForm {
+  margin-top: 2em;
+  width: 100%;
+}
+
   .arrowUp {
     width: 1.2em;
   }
   .dot {
+    margin-top: 1em;
     width: 3em;
     height: 3em;
   }
@@ -1228,6 +1295,28 @@ section {
   .icon {
     width: 3em;
   }
+
+  /* contact section */
+.contact {
+  flex-direction: column;
+  padding: 2em;
+}
+
+.contactForm {
+  width: 70%;
+  margin: auto;
+  padding: auto;
+  margin-top: 2em;
+}
+
+  .arrowUp {
+    width: 1.2em;
+  }
+  .dot {
+    margin-top: 1em;
+    width: 3em;
+    height: 3em;
+  }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1024px) {
@@ -1360,6 +1449,27 @@ section {
   .icon {
     width: 3em;
   }
+    /* contact section */
+.contact {
+  flex-direction: column;
+  padding: 2em;
+}
+
+.contactForm {
+  width: 50%;
+  margin: auto;
+  padding: auto;
+  margin-top: 2em;
+}
+
+  .arrowUp {
+    width: 1.2em;
+  }
+  .dot {
+    margin-top: 1em;
+    width: 3em;
+    height: 3em;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
@@ -1444,6 +1554,14 @@ section {
   }
   .projectBtnContainer button {
     font-size: 0.6em;
+  }
+
+  /* Contact styles */
+  .contactText {
+    width: 40%;
+  }
+  .contactForm {
+    width: 50%;
   }
 }
 

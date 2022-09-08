@@ -48,7 +48,7 @@
     </nav>
     <h2 class="introTitle">Hello,</h2>
     <h1 class="title">I'm Robbie Ho</h1>
-    <h2 class="subtitle">Web Developer</h2>
+    <h2 class="subtitle">Welcome to my portfolio</h2>
     <img src="./images/chevron-down-solid.svg" alt="chevron down" class="chevDown">
     <img src="./images/monitor.svg" alt="image of a monitor and a cat on top" class="catImage">
     <div class="bgContainer">
@@ -61,17 +61,17 @@
     </div>
   </Header>
   <section class="about" id="about">
-    <h2 class="sectionTitle"> Hi there, I'm Robbie!</h2>
-    <p class="sectionText">A web developer who loves building projects using code. <br>
+    <h2 class="sectionTitle">A bit about me</h2>
+    <p class="sectionText">I'm a developer who loves building projects using code. <br>
       Transforming ideas and designs into a complete website, ensuring seamless user experience is
-      my passion. I graduated from Open University’s BSc in Computing and IT. <br>
+      my passion. I graduated from Open University’s with a BSc in Computing and IT. <br>
       Other than coding, I spend most of my free time with my dog Ahri going on hikes and exploring the outdoors.
     </p>
     <div class="aboutAccents">
     </div>
   </section>
   <section class="work" id="work">
-    <h2 class="sectionTitle">My Work</h2>
+    <h2 class="sectionTitle">Some of my work</h2>
     <p class="sectionText">Click on any project to learn more!</p>
     <div class="imageContainer">
       <div class="placeholderImgSmall" id="project1">
@@ -236,21 +236,32 @@
     </div>
   </section>
   <section class="contact" id="contact">
-    <!-- <h1 class="sectionTitle">Let's chat!</h1>
-    <p class="sectionText">I'm ready and open for new challenges and opportunities. </br>
-      Send an email and we can chat.
-    </p>
-    <button class="btnEmail jello-horizontal" id="btnEmail">Email
-      me</button> -->
-    <form action="mailto:robbieho101@gmail.com" method="GET" target="_blank">
-      <h1 class="title">Email me</h1>
-      <div class="field"><label class="label" for="subject">Email Subject</label>
-        <input name="subject" id="subject" type="text" class="input" value="Example Email Subject">
+    <div class="contactText">
+      <h1 class="sectionTitle">Let's chat!</h1>
+      <p class="sectionText">I'm ready and open for new challenges and opportunities. </br>
+        Send me a message using the form, or contact me on social media and we can chat.
+      </p>
+      <div class="logoContainer">
+        <img src="./images/github-logo.svg" class="contactIcon" alt="Github logo">
+        <img src="./images/linkedin.svg" class="contactIcon" alt="Linkedin Logo">
       </div>
-      <div class="field"><label class="label" for="body">Email Body</label>
-        <textarea class="textarea" name="body" id="body">Example Email Body</textarea>
+    </div>
+    <form action='/whaaa' method='POST' name='contact' class="contactForm">
+
+      <input type='hidden' name='formName' value='contact' />
+
+
+      <input type="text" name="name" id="name" placeholder="name" autocomplete="off" required />
+
+
+      <input type="email" name="email" id="email" placeholder="email" required />
+
+
+      <textarea name="message" id="message" placeholder="message" required=""></textarea>
+
+      <div class="submitBtnContainer">
+        <button class="btnEmail jello-horizontal" type="submit">send message</button>
       </div>
-      <div><input type="submit" value="Create Email" class="button is-primary"></div>
     </form>
     <button class="dot" id="dot">
       <img src="./images/arrowup.svg" alt="arrow up button" class="arrowUp" id="arrowUp">
