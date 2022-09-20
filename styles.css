@@ -1022,7 +1022,9 @@ section {
     background-color: #006d77;
     padding-bottom: 15em;
   }
-
+    .introTitle {
+    padding-left: 18%;
+  }
   .title {
     padding-left: 18%;
     font-size: 1.5em;
@@ -1176,6 +1178,7 @@ section {
 }
 
 @media only screen and (min-width: 701px) and (max-width: 800px) {
+
   .title {
     font-size: 1.7em;
   }
@@ -1363,17 +1366,20 @@ section {
     background: linear-gradient(
       to right,
       var(--dark-green) 0%,
-      var(--dark-green) 60%,
-      var(--orange) 60%,
+      var(--dark-green) 72%,
+      var(--orange) 72%,
       var(--orange) 100%
     );
   }
   .navMenu {
-    width: 40vw;
+    width: 50vw;
     font-size: 0.8em;
-    padding: 0 0.2em;
+    padding: 0 0.3em;
+    margin: 0 1.5em;
   }
-
+  .introTitle {
+    padding-left: 5rem;
+  }
   .title {
     font-size: 2em;
     padding-left: 5rem;
@@ -1385,8 +1391,12 @@ section {
   }
 
   .catImage {
-    width: 17em;
+    width: 23em;
     left: 57%;
+  }
+
+  .chevDown {
+    margin-left: 25%;
   }
 
   /* Universal section styles */
@@ -1511,13 +1521,17 @@ section {
   }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1300px) {
+@media screen and (min-width: 1025px) and (max-width: 1450px) {
   .navMenu {
-    width: 35vw;
+    width: 42vw;
     font-size: 0.9em;
-    padding: 0 0.3em;
+    padding: 0 .5em;
+    margin-right: 1em;
   }
 
+  .introTitle {
+    padding-left: 10rem;
+  }
   .title {
     font-size: 2em;
     padding-left: 10rem;
@@ -1604,7 +1618,7 @@ section {
   }
 }
 
-@media screen and (min-width: 1301px) and (max-width: 1740px) {
+@media screen and (min-width: 1451px) and (max-width: 1740px) {
   .navMenu {
     width: 35vw;
     font-size: 1.1em;
