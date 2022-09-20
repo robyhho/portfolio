@@ -30,6 +30,38 @@ a {
   z-index: 5000;
 }
 
+/* Observer styles */
+
+.hiddenLeft {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.hiddenRight {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateX(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.workImg:nth-child(2) {
+  transition-delay: 200ms;
+}
+.workImg:nth-child(3) {
+  transition-delay: 400ms;
+}
+.workImg:nth-child(4) {
+  transition-delay: 600ms;
+}
+
 /* Header styles */
 
 header {
@@ -58,7 +90,7 @@ header {
 
 .title {
   padding-left: 25%;
-  font-size: 3em;
+  font-size: 3.5em;
   color: var(--orange);
 }
 
@@ -67,7 +99,7 @@ header {
   padding-top: 0.5em;
   color: white;
   font-weight: 400;
-  font-size: 1em;
+  
 }
 
 .chevDown {
@@ -95,7 +127,7 @@ header {
   margin-top: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100vw;
 }
 
@@ -119,11 +151,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0.5em;
-  padding-right: 5em;
+  padding-right: 3em;
 }
 
 .navMenu a {
-  color: var(--dark-green);
+  color: var(--light-blue);
+  font-weight: 500;
+  font-size: 1.4em;
 }
 
 /* Menu Burger styles */
@@ -184,7 +218,7 @@ header {
 .underline {
   display: inline-block;
   position: relative;
-  color: var(--dark-green);
+  color: var(--light-blue);
 }
 
 .underline:after {
@@ -195,7 +229,7 @@ header {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--dark-green);
+  background-color: var(--light-blue);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -373,7 +407,7 @@ section {
   position: absolute;
   top: 5%;
   right: 5%;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 1.5em;
   user-select: none;
 }
@@ -523,6 +557,7 @@ section {
 
 .icon {
   width: 4em;
+
 }
 
 /* Contact Section styles */
@@ -634,6 +669,7 @@ section {
 
 /* Animation styles */
 
+
 /* Navbar menu onclick animation */
 .a {
   -webkit-animation: rotate-scale-down 0.65s linear both;
@@ -648,6 +684,7 @@ section {
   50% {
     -webkit-transform: scale(0.5) rotateZ(180deg);
     transform: scale(0.5) rotateZ(180deg);
+    
   }
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
@@ -912,6 +949,8 @@ section {
 .feeder div:nth-child(3) {
   --delay: 0.5;
 }
+
+
 
 /* Media queries */
 

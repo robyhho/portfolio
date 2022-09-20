@@ -1,10 +1,27 @@
 //SETTERS
 let burgerMenuScreenWidth = 800;
 let menuIsOpen = false;
+
+/* Create observer */
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
 //SELECTORS
+
+const hiddenLeftElems = document.querySelectorAll(".hiddenLeft");
+const hiddenRightElems = document.querySelectorAll(".hiddenRight");
+
 const loader = document.getElementById("loaderContainer");
 const header = document.getElementById("header");
-const logo = document.getElementById("logo");
+
 const navAbout = document.getElementById("navAbout");
 const navWork = document.getElementById("navWork");
 const navToolkit = document.getElementById("navToolkit");
@@ -37,7 +54,7 @@ const btnEmail = document.getElementById("btnEmail");
 menuIcon.addEventListener("click", showMenu);
 
 /* MoveTo Events */
-logo.addEventListener("click", moveTo);
+
 navAbout.addEventListener("click", moveTo);
 navWork.addEventListener("click", moveTo);
 navToolkit.addEventListener("click", moveTo);
@@ -55,20 +72,18 @@ github2.addEventListener("click", goToUrl);
 github3.addEventListener("click", goToUrl);
 github4.addEventListener("click", goToUrl);
 
-/* Email Button events */
-// btnEmail.addEventListener("click", goToEmail);
-
+/* Observer events */
+hiddenLeftElems.forEach((el) => observer.observe(el));
+hiddenRightElems.forEach((el) => observer.observe(el));
 //FUNCTIONS
-
-/* Sets width of body to  */
 
 /* Loader Removal function  */
 // TODO Re-enable Loader
-// document.addEventListener("DOMContentLoaded", function (event) {
-//   setTimeout(() => {
-//     loader.style.display = "none";
-//   }, 3000);
-// });
+document.addEventListener("DOMContentLoaded", function (event) {
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 2000);
+});
 
 /* MoveTo Function
   Moves window to id of target elem.
