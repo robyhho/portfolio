@@ -401,6 +401,10 @@ section {
   background-size: cover;
 }
 
+.tipCalcImg {
+  background: url(./images/projectShots/tipCalculatorMockup.png);
+  background-size: cover;
+}
 
 /* Project info styles */
 .projectInfo {
