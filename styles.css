@@ -56,10 +56,10 @@ a {
   transition-delay: 200ms;
 }
 .workImg:nth-child(3) {
-  transition-delay: 400ms;
+  transition-delay: 300ms;
 }
 .workImg:nth-child(4) {
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 
 /* Header styles */
@@ -383,6 +383,24 @@ section {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   z-index: 2;
 }
+
+.rockPaperImg {
+  background: url(./images/projectShots/rockPaperMockup.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.todoImg {
+  background: url(./images/projectShots/todoMock.png);
+  background-position: 20%;
+}
+
+.dantatImg {
+  background: url(./images/projectShots/dantatMockup.png);
+  background-position: 0;
+  background-size: cover;
+}
+
 
 /* Project info styles */
 .projectInfo {
