@@ -304,6 +304,7 @@ header {
 }
 
 .sectionText {
+  max-width: 1100px;
   color: var(--dark-green);
 }
 
@@ -606,6 +607,10 @@ section {
 .contactIcon:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.contactText {
+  max-width: 800px;
 }
 
 .contactForm {
@@ -1121,6 +1126,15 @@ section {
     max-width: 330px;
   }
 
+  .todoImg {
+    background-position: center;
+    background-size: 150%;
+  }
+
+  .tipCalcImg {
+    background-position: center;
+  }
+
   /* Project Info styles */
 
   .cross {
@@ -1332,6 +1346,15 @@ section {
     margin: 1em 0.5em;
   }
 
+  .todoImg {
+    background-position: center;
+    background-size: 150%;
+  }
+
+  .tipCalcImg {
+    background-position: center;
+  }
+
   .language {
     padding: 0em;
   }
@@ -1492,6 +1515,15 @@ section {
     margin: 1em 0.5em;
   }
 
+  .todoImg {
+    background-position: center;
+    background-size: 150%;
+  }
+
+  .tipCalcImg {
+    background-position: center;
+  }
+
   .language {
     padding: 0em;
   }
@@ -1622,6 +1654,15 @@ section {
 
   #bbContainer .language {
     margin: 1em 0.5em;
+  }
+
+    .todoImg {
+    background-position: center;
+    background-size: 120%;
+  }
+
+  .tipCalcImg {
+    background-position: center;
   }
 
   .language {
