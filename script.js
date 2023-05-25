@@ -42,7 +42,7 @@ const project3 = document.getElementById("project3");
 const project4 = document.getElementById("project4");
 
 const github1 = document.getElementById("github1");
-const github2 = document.getElementById("github2");
+
 const github3 = document.getElementById("github3");
 const github4 = document.getElementById("github4");
 
@@ -68,7 +68,7 @@ project3.addEventListener("click", showInfo);
 project4.addEventListener("click", showInfo);
 
 github1.addEventListener("click", goToUrl);
-github2.addEventListener("click", goToUrl);
+
 github3.addEventListener("click", goToUrl);
 github4.addEventListener("click", goToUrl);
 
