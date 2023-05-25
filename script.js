@@ -42,7 +42,6 @@ const project3 = document.getElementById("project3");
 const project4 = document.getElementById("project4");
 
 const github1 = document.getElementById("github1");
-
 const github3 = document.getElementById("github3");
 const github4 = document.getElementById("github4");
 
