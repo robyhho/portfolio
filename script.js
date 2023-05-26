@@ -41,6 +41,11 @@ const project2 = document.getElementById("project2");
 const project3 = document.getElementById("project3");
 const project4 = document.getElementById("project4");
 
+const viewLive1 = document.getElementById("viewLive1");
+const viewLive2 = document.getElementById("viewLive2");
+const viewLive3 = document.getElementById("viewLive3");
+const viewLive4 = document.getElementById("viewLive4");
+
 const github1 = document.getElementById("github1");
 const github3 = document.getElementById("github3");
 const github4 = document.getElementById("github4");
@@ -66,8 +71,12 @@ project2.addEventListener("click", showInfo);
 project3.addEventListener("click", showInfo);
 project4.addEventListener("click", showInfo);
 
-github1.addEventListener("click", goToUrl);
+viewLive1.addEventListener("click", goToUrl);
+viewLive2.addEventListener("click", goToUrl);
+viewLive3.addEventListener("click", goToUrl);
+viewLive4.addEventListener("click", goToUrl);
 
+github1.addEventListener("click", goToUrl);
 github3.addEventListener("click", goToUrl);
 github4.addEventListener("click", goToUrl);
 
@@ -173,14 +182,32 @@ function showMenu(event) {
 
 function goToUrl(event) {
   switch (event.target.id) {
+    case "viewLive1":
+      window.open(
+        "https://robyhho.github.io/showCaseProjects/rock-paper-scissors/index.html",
+        "_blank"
+      );
+      break;
+    case "viewLive2":
+      window.open("", "_blank");
+      break;
+    case "viewLive3":
+      window.open(
+        "https://robyhho.github.io/showCaseProjects/todo-app-main/index.html",
+        "_blank"
+      );
+      break;
+    case "viewLive4":
+      window.open(
+        "https://robyhho.github.io/showCaseProjects/tip-calculator/index.html",
+        "_blank"
+      );
+      break;
     case "github1":
       window.open(
         "https://github.com/robyhho/showCaseProjects/tree/master/rock-paper-scissors",
         "_blank"
       );
-      break;
-    case "github2":
-      window.open("https://github.com/robyhho/bbakery", "_blank");
       break;
     case "github3":
       window.open(
