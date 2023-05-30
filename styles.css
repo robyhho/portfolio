@@ -385,6 +385,7 @@ section {
 .todoImg {
   background: url(./images/projectShots/todoMock.png);
   background-position: 20%;
+  background-size: cover;
 }
 
 .dantatImg {
