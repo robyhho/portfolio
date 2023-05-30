@@ -32,7 +32,6 @@ a {
 
 /* Observer styles */
 
-
 .hiddenRight {
   opacity: 0;
   transition: all 1s;
@@ -46,15 +45,6 @@ a {
   transform: translateX(0);
 }
 
-.workImg:nth-child(2) {
-  transition-delay: 200ms;
-}
-.workImg:nth-child(3) {
-  transition-delay: 300ms;
-}
-.workImg:nth-child(4) {
-  transition-delay: 400ms;
-}
 
 /* Header styles */
 
@@ -116,7 +106,33 @@ header {
 
 /* Navbar styles */
 
+/* Underline animation styles */
+.underline {
+  display: inline-block;
+  position: relative;
+  color: var(--light-blue);
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light-blue);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 .navbar {
+  position: fixed;
+  top: 1em;
   padding-top: 0;
   margin-top: 0;
   display: flex;
@@ -125,10 +141,7 @@ header {
   width: 100vw;
 }
 
-.navbar a {
-  font-weight: 400;
-  font-size: 1.2em;
-}
+
 
 .navbar a:hover {
   cursor: pointer;
@@ -148,10 +161,14 @@ header {
   padding-right: 3em;
 }
 
-.navMenu a {
+.navMenuLink {
   color: var(--light-blue);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.4em;
+}
+
+.darkGreen {
+  color: var(--dark-green);
 }
 
 /* Menu Burger styles */
@@ -208,30 +225,7 @@ header {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
-/* Underline animation styles */
-.underline {
-  display: inline-block;
-  position: relative;
-  color: var(--light-blue);
-}
 
-.underline:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--light-blue);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.underline:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 
 /* Background header styles */
 
@@ -478,6 +472,16 @@ section {
   background-color: white;
   color: black;
   cursor: pointer;
+}
+
+#viewLive2 {
+  opacity: 0;
+}
+
+#viewLive2:hover {
+  cursor: default;
+  background-color: var(--light-green);
+  color: white;
 }
 
 /* Work Background styles */

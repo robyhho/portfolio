@@ -22,6 +22,7 @@ const hiddenRightElems = document.querySelectorAll(".hiddenRight");
 const loader = document.getElementById("loaderContainer");
 const header = document.getElementById("header");
 
+const navbar = document.getElementById("navbar");
 const navAbout = document.getElementById("navAbout");
 const navWork = document.getElementById("navWork");
 const navToolkit = document.getElementById("navToolkit");
@@ -55,6 +56,21 @@ const btnEmail = document.getElementById("btnEmail");
 //EVENT LISTENERS
 
 /* Navbar Events */
+
+window.addEventListener("scroll", function (e) {
+  e.preventDefault();
+  if (window.scrollY >= window.innerHeight) {
+    navAbout.classList.add("darkGreen");
+    navWork.classList.add("darkGreen");
+    navContact.classList.add("darkGreen");
+    navToolkit.classList.add("darkGreen");
+  } else {
+    navAbout.classList.remove("darkGreen");
+    navWork.classList.remove("darkGreen");
+    navContact.classList.remove("darkGreen");
+    navToolkit.classList.remove("darkGreen");
+  }
+});
 menuIcon.addEventListener("click", showMenu);
 
 /* MoveTo Events */
@@ -81,12 +97,13 @@ github3.addEventListener("click", goToUrl);
 github4.addEventListener("click", goToUrl);
 
 /* Observer events */
-hiddenLeftElems.forEach((el) => observer.observe(el));
+
 hiddenRightElems.forEach((el) => observer.observe(el));
+
 //FUNCTIONS
 
 /* Loader Removal function  */
-// TODO Re-enable Loader
+
 document.addEventListener("DOMContentLoaded", function (event) {
   setTimeout(() => {
     loader.style.display = "none";

@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;600;700&display=swap" rel="stylesheet">
 
     <title>Robbie's portfolio website</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+
 </head>
 <!-- TODO 
   Email Btn: Action
@@ -32,13 +34,12 @@
     </div>
   </div>
   <Header id="header">
-    <nav class="navbar">
-      <!-- <a class="logo" id="logo">Robbie Ho</a> -->
+    <nav id="navbar" class="navbar">
       <div class="navMenu" id="navMenu">
-        <a id="navAbout" class="underline">About Me</a>
-        <a id="navWork" class="underline">My Work</a>
-        <a id="navToolkit" class="underline">My Toolkit</a>
-        <a id="navContact" class="underline">Contact</a>
+        <a id="navAbout" class="navMenuLink underline">About Me</a>
+        <a id="navWork" class="navMenuLink underline">My Work</a>
+        <a id="navToolkit" class="navMenuLink underline">My Toolkit</a>
+        <a id="navContact" class="navMenuLink underline">Contact</a>
       </div>
 
       <div class="menuBtn" id="menuBtn">
@@ -47,7 +48,8 @@
     </nav>
     <h2 class="introTitle">Hello,</h2>
     <h1 class="title">I'm Robbie Ho</h1>
-    <h2 class="subtitle">Welcome to my portfolio</h2>
+    <h2 class="subtitle">A Front-End Developer</h2>
+
     <img src="./images/chevron-down-solid.svg" alt="chevron down" class="chevDown">
     <img src="./images/monitor.svg" alt="image of a monitor and a cat on top" class="catImage">
     <div class="bgContainer">
@@ -112,7 +114,7 @@
             <span class="language" id="Node">Node</span>
           </div>
           <div class="projectBtnContainer">
-            <button id="viewLive2">View Live</button>
+            <button id="viewLive2" disabled>View Live</button>
 
           </div>
         </div>
