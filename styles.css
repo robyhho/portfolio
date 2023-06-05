@@ -130,6 +130,7 @@ header {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
 .navbar {
   position: fixed;
   top: 1em;
@@ -582,7 +583,7 @@ section {
 
 .icon {
   width: 4em;
-
+  height: 4em;
 }
 
 /* Contact Section styles */
@@ -1134,7 +1135,7 @@ section {
   }
 
   #bbContainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #bbContainer .language {
@@ -1169,6 +1170,8 @@ section {
   }
   .icon {
     width: 2.5em;
+    height: 2.5em;
+    
   }
   /* contact section */
 .contact {
@@ -1313,7 +1316,7 @@ section {
   }
 
   #bbContainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #bbContainer .language {
@@ -1354,6 +1357,7 @@ section {
     font-size: 0.8em;
   }
   .icon {
+    width: 3em;
     width: 3em;
   }
 
@@ -1478,11 +1482,12 @@ section {
     margin: 0;
     display: grid;
     font-size: 0.5em;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
   }
 
   #bbContainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #bbContainer .language {
@@ -1525,6 +1530,7 @@ section {
   }
   .icon {
     width: 3em;
+    height: 3em;
   }
     /* contact section */
 .contact {
@@ -1620,10 +1626,11 @@ section {
     display: grid;
     font-size: 0.6em;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
   }
 
   #bbContainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #bbContainer .language {
@@ -1719,7 +1726,7 @@ section {
   }
 
   #bbContainer {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #bbContainer .language {
